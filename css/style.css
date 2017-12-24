@@ -1,0 +1,65 @@
+html, body {
+  background-color: #393749;
+  font-family: "Quicksand";
+  min-width: 300px;
+}
+
+#main_div {
+  width: 60%;
+  max-width: 600px;
+  min-width: 300px;
+  height: 17em;
+  margin: auto;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding: 1em;
+  text-align: center;
+  background-color: #c9dfe8;
+  border-radius: 1em;
+}
+
+#quoteDiv {
+  font-size: 1.5em;
+}
+
+#buttonDiv {
+  margin-top: 1em;
+}
+
+button {
+  margin: 0.25em;
+}
+
+@keyframes planet {
+  0%   { margin-left: 70%;}
+  25%  { margin-left: 50%;}
+  50%  {margin-left: 30%;}
+  75%  {margin-left: 50%;}
+  100% {margin-left: 70%;}
+}
+
+@keyframes moon {
+  0% { left: 0em; top: 0em;}
+  50% {left: -2em; top: 0em;}
+  100% {left: 0em; top: 0em}
+}
+
+#planet {
+  background-color: #ef8f73;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 8em;
+  width: 2em;
+  height: 2em;
+  animation: planet 60s linear infinite;
+}
+
+#moon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  background-color: #efdeda;
+  border-radius: 50%;
+  margin: 2em;
+  animation: moon 20s linear infinite;
+}
